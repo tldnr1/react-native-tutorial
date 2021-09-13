@@ -1,0 +1,24 @@
+React Native Tutorial for Beginners - Build a React Native App [2020] (from Youtube)
+
+List
+ ㄴ 1. View
+ ㄴ 2. Text
+ ㄴ 3. Image
+ ㄴ 4. Touchables
+ ㄴ 5. Button
+ ㄴ 6. Alert
+ ㄴ 7. StyleSheet
+ ㄴ 8. LayOuts
+
+
+1. View
+<View></View> 로 사용
+<SafeAreaView> : 스마트폰의 가장 윗부분인 StatusBar에 Text 안올라가게 하기
+
+2. Text
+<Text></Text> 로 사용
+numberOfLines={숫자} : Text가 최대 몇줄인지 정함
+onPress={함수} : Text가 눌렸을때 반응 지정
+ ㄴ 1) 간단한 로그보기 : <Text onPress{() => console.log("Text Pressed")}></Text>
+ ㄴ 2) 함수형태로 사용 : const handlePress = () => console.log("Text Pressed")
+                              <Text onPress={ handlePress }></Text>
