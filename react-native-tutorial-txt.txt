@@ -8,6 +8,8 @@ List
  ㄴ 5. Button
  ㄴ 6. Alert
  ㄴ 7. StyleSheet
+       ㄴ justifyContent: 상하(세로) 방향 조정
+       ㄴ alignItems: 좌우(가로) 방향 조정
  ㄴ 8. LayOuts
 
 
@@ -22,3 +24,15 @@ onPress={함수} : Text가 눌렸을때 반응 지정
  ㄴ 1) 간단한 로그보기 : <Text onPress{() => console.log("Text Pressed")}></Text>
  ㄴ 2) 함수형태로 사용 : const handlePress = () => console.log("Text Pressed")
                               <Text onPress={ handlePress }></Text>
+
+3. Image
+<Image source={ } /> 로 사용
+ ㄴ { } 사이에는 다음 2가지 방식을 사용
+      ㄴ 1. require('') : '' 사이에 파일의 위치를 넣음 보통 ./assets/ 로 설정
+      ㄴ 2. uri : 사진의 https 주소 입력, 이때 width, height 등의 정보를 직접 입력
+       + 이 외의 다른 기능들은 React Native > API > Image 의 우측에서 확인 가능
+
+4. Touchables
+<Touchables></Touchables> 로 사용
+onPress={함수} 사용
+ + Touchables의 다양한 형태(TouchableWithoutFeedback 등)에 따라 반응결과 달라짐
