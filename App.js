@@ -12,13 +12,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Hello React Native</Text>
       <TouchableOpacity onPress={() => console.log("Image pressed")}>
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/200/300",
-          }}
-        />
+       <View style={{ width: 200, height: 70, backgroundColor: "dodgerblue" }} />
       </TouchableOpacity>
     </View>
   );
